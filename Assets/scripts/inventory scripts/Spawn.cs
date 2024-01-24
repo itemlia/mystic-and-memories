@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Spawn : MonoBehaviour
@@ -7,6 +8,7 @@ public class Spawn : MonoBehaviour
     private GameObject item;
     private Transform player;
     [SerializeField] private Vector3 scale;
+    
 
     private void Start()
     {
@@ -17,8 +19,10 @@ public class Spawn : MonoBehaviour
 
     public void SpawnItems ()
     {
-        Vector2 spawnPos = new Vector3(player.position.x + 3, player.position.y - 3, 0); //sets a new position variable of the players position with an offset
+        Vector2 spawnPos = new Vector3(player.position.x + 4, player.position.y, 0); //sets a new position variable of the players position with an offset
         Instantiate(item, spawnPos, Quaternion.identity); //quarternian stops object rotating weirdly when spawned back into gamae
-        item.transform.localScale = scale; //sets scale of item when spawned into game
+        item.SetActive(true);
+        item.transform.localScale = scale; //sets scale of item when spawned 
+        Destroy(item);
     }
 }

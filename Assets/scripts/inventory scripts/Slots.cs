@@ -15,7 +15,7 @@ public class Slots : MonoBehaviour
 
     private void Update()
     {
-        if (transform.childCount >= 1)
+        if (transform.childCount >= 2)
         {
             inventory.isFull[i] = true; //edits invetory array
         }
@@ -25,8 +25,13 @@ public class Slots : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            child.GetComponent<Spawn>().SpawnItems(); //calls function from spawn class
-            Destroy(child.gameObject); //if cross is press then object will be removed from inventory
+            GetComponent<Spawn>().SpawnItems(); //calls function from spawn class
+            if (child.tag == "item")
+            {
+                Destroy(child.gameObject);
+                inventory.isFull[i] = false;
+            }
         }
+        
     }
 }
