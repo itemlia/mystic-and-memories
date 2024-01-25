@@ -13,16 +13,16 @@ public class Spawn : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindWithTag("Player").transform; //gets position of player
-        item = GameObject.FindWithTag("item");
+        //item = GameObject.FindWithTag("item");
 
     }
 
     public void SpawnItems ()
     {
         Vector2 spawnPos = new Vector3(player.position.x + 4, player.position.y, 0); //sets a new position variable of the players position with an offset
-        Instantiate(item, spawnPos, Quaternion.identity); //quarternian stops object rotating weirdly when spawned back into gamae
-        item.SetActive(true);
-        item.transform.localScale = scale; //sets scale of item when spawned 
+        GameObject dust = Instantiate(item, spawnPos, Quaternion.identity); //quarternian stops object rotating weirdly when spawned back into gamae
+        //item.SetActive(true);
+        dust.transform.localScale = scale; //sets scale of item when spawned 
         Destroy(item);
     }
 }

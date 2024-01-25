@@ -6,27 +6,31 @@ using UnityEngine;
 public class dialougeTimer : MonoBehaviour
 {
 
-    [SerializeField] private int setActiveTime;
+   //[SerializeField] private int setActiveTime;
     [SerializeField] private int destroyTime;
+    [SerializeField] private GameObject previousText;
 
     private void Start()
     {
-        //gameObject.SetActive(false);
-        StartCoroutine(delayTime());
+        gameObject.SetActive(false);
+        setActive();
+        StartCoroutine(deleteText());
+       
     }
 
-    IEnumerator delayTime()
-    {
-        Debug.Log("timer");
-
-       // yield return new WaitForSeconds(setActiveTime);
-        //Thread.Sleep(setActiveTime);
-
-       // gameObject.SetActive(true);
-
+    IEnumerator deleteText() //coroutine that allows dialogue to be displayed for a certain amount of seconds
+    { 
+     
         yield return new WaitForSeconds(destroyTime);
-        //Thread.Sleep(destroyTime);
-
         Destroy(gameObject);
+    }
+
+    private void setActive()
+    {
+        if (previousText)
+        {
+            Debug.Log("seen");
+            gameObject.SetActive(true);
+        }
     }
 } 
