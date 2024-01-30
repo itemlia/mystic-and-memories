@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sections:
   - dialogue:
-    - hello! how can i help you
+    - 'hello! '
     endAfterDialogue: 0
     branchPoint:
       question: i need some help
@@ -22,7 +22,7 @@ MonoBehaviour:
       - answerType: how can i help?
         nextDialogueElement: 1
   - dialogue:
-    - i know what goes on around here
+    - i know all the gossip around here
     endAfterDialogue: 0
     branchPoint:
       question: could you please tell me where i am?
@@ -32,43 +32,27 @@ MonoBehaviour:
       - answerType: i've told you this before
         nextDialogueElement: 3
   - dialogue:
-    - 
+    - 'i''ve lived on this island my whole life '
     endAfterDialogue: 0
     branchPoint:
-      question: 
-      answers: []
-  - dialogue: []
-    endAfterDialogue: 0
+      question: how did i get here?
+      answers:
+      - answerType: well im not sure about that, there's no way on and off this island
+        nextDialogueElement: 4
+  - dialogue:
+    - there's no way on or off the island
+    endAfterDialogue: 1
     branchPoint:
-      question: 
-      answers: []
-  - dialogue: []
-    endAfterDialogue: 0
+      question: so why am i here
+      answers:
+      - answerType: ask the town mage two houses down - he knows all the mystical
+          things that go on around here
+        nextDialogueElement: 0
+  - dialogue:
+    - well there is ... no its nothing
+    endAfterDialogue: 1
     branchPoint:
-      question: 
-      answers: []
-  - dialogue: []
-    endAfterDialogue: 0
-    branchPoint:
-      question: 
-      answers: []
-  - dialogue: []
-    endAfterDialogue: 0
-    branchPoint:
-      question: 
-      answers: []
-  - dialogue: []
-    endAfterDialogue: 0
-    branchPoint:
-      question: 
-      answers: []
-  - dialogue: []
-    endAfterDialogue: 0
-    branchPoint:
-      question: 
-      answers: []
-  - dialogue: []
-    endAfterDialogue: 0
-    branchPoint:
-      question: 
-      answers: []
+      question: no please! tell me what you were going to say!!
+      answers:
+      - answerType: ask the mage two houses down, he'll know more
+        nextDialogueElement: 0
