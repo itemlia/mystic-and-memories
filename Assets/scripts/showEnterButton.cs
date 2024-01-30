@@ -5,6 +5,8 @@ using Unity.VisualScripting;
 using UnityEditor.Presets;
 using UnityEngine;
 
+
+
 public class showEnterButton : MonoBehaviour
 {
     public GameObject buttonManager;
@@ -18,7 +20,7 @@ public class showEnterButton : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, distance, mask);
         if (hit.transform != null)
         {
-            if (hit.transform.CompareTag("Player")) //when plater gets near house enter button shows up
+            if (hit.transform.CompareTag("Player")) //when player gets near house enter button shows up
             {
                 buttonManager.SetActive(true);
             }

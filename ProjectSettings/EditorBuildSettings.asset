@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/talkToNPC.unity
     guid: f886926751ae1634eab535ab821156ac
+  - enabled: 1
+    path: Assets/scenes/mageHouse.unity
+    guid: 29dfcd7cead96bb4aa4109b11e5ab199
   m_configObjects: {}
