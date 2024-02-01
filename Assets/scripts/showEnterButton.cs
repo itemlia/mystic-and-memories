@@ -16,7 +16,7 @@ public class showEnterButton : MonoBehaviour
     {
         int layer = 2;
         int mask = 1 << layer;
-        mask = ~mask; //thanks brad
+        mask = ~mask; 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, distance, mask);
         if (hit.transform != null)
         {
