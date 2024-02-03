@@ -14,7 +14,7 @@ public class loadInsideHouse : MonoBehaviour
     public void loadHouse()
     {
         SceneManager.LoadScene("scenes/insideHouse");
-        player.transform.position = new Vector3(-0.07999991f, -9.081256f, 0f);
+        player.transform.position = new Vector3(0.1314539f, -9.746695f, 0f);
     }
     
     public void Start()

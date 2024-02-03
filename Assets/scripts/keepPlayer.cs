@@ -6,25 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class keepPlayer : MonoBehaviour
 {
-    private string currentScene; 
 
     private void Start()
     {
-        currentScene = SceneManager.GetActiveScene().name;
-    }
+        int player = GameObject.FindGameObjectsWithTag("Player").Length;
 
-    private void Awake()
-    {
-        if (currentScene == "level1")
+        if (player > 1)
         {
-            Destroy(gameObject);
+          Destroy(gameObject);
         } 
         else
         {
             DontDestroyOnLoad(gameObject);
         }
-        
-        
-
     }
+
+   
 }

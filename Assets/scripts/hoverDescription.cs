@@ -6,7 +6,11 @@ using UnityEngine;
 public class hoverDescription : MonoBehaviour
 {
     public GameObject description;
-   
+
+    private void Start()
+    {
+        description = GameObject.Find("red desc empty");
+    }
 
     private void OnMouseOver()
     {

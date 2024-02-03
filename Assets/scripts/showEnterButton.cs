@@ -23,6 +23,10 @@ public class showEnterButton : MonoBehaviour
             if (hit.transform.CompareTag("Player")) //when player gets near house enter button shows up
             {
                 buttonManager.SetActive(true);
+
+                //use waitforseconds to hide it so doest always stay active
+
+                //make scripts that let u leave houses when u walk towards the back - use collisions
             }
         }
 

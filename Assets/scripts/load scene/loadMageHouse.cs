@@ -11,12 +11,14 @@ public class loadMageHouse : MonoBehaviour
 
     public void loadHouse()
     {
-        SceneManager.LoadScene("scenes/mageHouse");
         player.transform.position = new Vector3(-0.07999991f, -9.081256f, 0f);
+        SceneManager.LoadScene("scenes/mageHouse");
+        
     }
 
     public void Start()
     {
+       
         var btn = enter.GetComponent<Button>();
         btn.onClick.AddListener(loadHouse);
     }
