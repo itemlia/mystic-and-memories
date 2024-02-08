@@ -11,7 +11,7 @@ public class levelOne : MonoBehaviour
 
     public void loadScene()
     {
-        SceneManager.LoadSceneAsync("scenes/level1");
+        SceneManager.LoadScene("scenes/level1");
         
        
     }

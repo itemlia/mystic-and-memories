@@ -9,15 +9,16 @@ public class keepPlayer : MonoBehaviour
 
     private void Start()
     {
-        int player = GameObject.FindGameObjectsWithTag("Player").Length;
+        GameObject[] player = GameObject.FindGameObjectsWithTag("Player");
 
-        if (player > 1)
+        if (player.Length > 1)
         {
-          Destroy(gameObject);
+
+            Destroy(player[1]);
         } 
         else
         {
-            DontDestroyOnLoad(gameObject);
+           DontDestroyOnLoad(gameObject);
         }
     }
 

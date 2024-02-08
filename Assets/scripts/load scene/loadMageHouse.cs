@@ -18,7 +18,7 @@ public class loadMageHouse : MonoBehaviour
 
     public void Start()
     {
-       
+        player = GameObject.FindWithTag("Player");
         var btn = enter.GetComponent<Button>();
         btn.onClick.AddListener(loadHouse);
     }

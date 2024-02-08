@@ -1,0 +1,1447 @@
+fileFormatVersion: 2
+guid: fd207046187c977489e3991d32e17662
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_mage_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 509.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057a80800c922b6469886f40ee43586e
+      internalID: 190430624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 509.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1245013228529a245aa4c7a9434a9e76
+      internalID: 2012425786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 509.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ead2320dab80140830bd3a37bae6fa
+      internalID: -925275848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 509.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7092340788ee344bd2402c2160bf9a
+      internalID: -480163077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 509.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a1c34a4668cb94f897c743b061540f
+      internalID: 572759658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 437.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287d82bcb9a5f6448a21637784aece09
+      internalID: 1172279337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 437.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ee78bb4c3618a41b872542d7a69cc1
+      internalID: -329955450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 437.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e58d503dfc63849967672b9140137c
+      internalID: 1618820456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 437.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab2f91fbd9c08847a8a82ac1d8c4c46
+      internalID: 471091817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 437.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91abb75d3be7d934cbe42534af4932cc
+      internalID: 1692998816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63f81da7e2cf9748b4f7ccd845258be
+      internalID: -604194707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 365.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6c958cf78470949a9c6e06bc4bb57d
+      internalID: 888216134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 365.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15374eef5037bb4448773381875f32e1
+      internalID: 1479004020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 365.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d697e947ae89e5944b72b62d87d5bc04
+      internalID: 479889391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 365.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93bf1603a599a2d4a9e35d841e7d82f4
+      internalID: 401998708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 293.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4454721bdd96c340b8ed7d63c53cbc3
+      internalID: 1429541735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 293.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8e86462a17bb5449fb700df6bbb375
+      internalID: -925335079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 293.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd86fa945190874e97917e63e2bc463
+      internalID: -771215249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 293.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bdee405c79d394bac5e57d7a1f7a79
+      internalID: 436646997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 293.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06bc58935613f34cad8d73f00226ca2
+      internalID: -32200628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 221.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ae25439c3f5f64199f9588ad11a288
+      internalID: -1668912520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 221.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243e4f7891580504f8bffe6893e0a5ed
+      internalID: -1045795983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 221.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63ed756e29cb2a4daaee0913ce7363a
+      internalID: 1528964125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 221.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af55eb80b00331b4a866b9db4fe5ed43
+      internalID: -973361449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 221.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206a8869e97cb744ea66b2d58303db2c
+      internalID: -2118085526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 221.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc35279353e80f14cbfd7aefc760415e
+      internalID: -1793839926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 221.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0496db81328c16459d4c9a67ccc4d75
+      internalID: -1450676400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 221.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e597bfbea20054dac54746f650d7f2
+      internalID: -1599868021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 221.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d154959222fdc4c8dfa88912efe48c
+      internalID: 1438646652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 221.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea69d042d18319345911d5f9c66a20fd
+      internalID: -439513602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 149.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc1dd87bbb8f764a90d184e6e3d8283
+      internalID: -1466151373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 149.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1d4cf1dfecbe24098720d9ea651529
+      internalID: 905870210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 149.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493a3d17a78aed541a8de0d2d13899ff
+      internalID: -1103000570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 149.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d51b10f7924ea045b1bb32188235e79
+      internalID: -711192531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 149.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635c43129ea466844a03646e9c1a7e25
+      internalID: -1769887926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 149.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e643c783f621ef45b0c40ad5b024fbb
+      internalID: 176010188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 149.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4354d39ced69b4ab960b57329f5038
+      internalID: -1790806716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 149.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db79a07b0e13d7458ad4fe8b7bd00a9
+      internalID: -386981707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 149.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3185d55be339f4c82b6c9636145a5c
+      internalID: 756197756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 149.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c277714274c00e4c913b4e0db7145bd
+      internalID: 146116104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd777c04d8f9840478f7b233c613014e
+      internalID: 2038159915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 77.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29f308463ad1944bb72f83081e63a05
+      internalID: 1280497918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 77.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b8c632676a96846835f95eca5fef64
+      internalID: -300630041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 77.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c078583b66b54148943164cf4110c0e
+      internalID: 1652601865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 77.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44f11d86a2baab4ebd772da61189ebd
+      internalID: -673513275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 77.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7186c842bd39ed45b755199081a9111
+      internalID: 152254263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 77.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcfa53ac56efa0745887ea5b19bde6ae
+      internalID: 1962303978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 77.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd0fdfb76c51c74d8c42adde98167f0
+      internalID: -1814875510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 77.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec353c7faaaac946ac14e5652b9d1c9
+      internalID: -1952513833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 77.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9189c10f51c2c4ea18f3f8c45dfa3f
+      internalID: -12328207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0174ace54075a4ab2209f66e494013
+      internalID: 1317347779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 5.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd7d4f1b69a8184f87a480bf046bf9d
+      internalID: 1285933239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 5.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d569b026c13e946a9f28cf6b4b0e4f
+      internalID: -532914415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 5.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa20deb390ddbe64cac166a9e4118e8b
+      internalID: -645426839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 5.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e0ac06a6dcec745814876b8641ccff
+      internalID: 484354439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 5.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124b06e5aadebcb4da1454b6aeeb9bc6
+      internalID: -822793836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_56
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 5.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d325d5fb70b226a4eb2108fbabb2990b
+      internalID: -649537310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_57
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 5.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f9e5b717dd1774993dfcf93f248485
+      internalID: -1298839723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 5.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b70c1f3bb745844806c7c627bcd4e0
+      internalID: -982117456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_mage_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 5.25
+        width: 32
+        height: 72.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b439a766d70e574eb9fb1c18fdfa189
+      internalID: 1395249564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      player_mage_sheet_0: 190430624
+      player_mage_sheet_1: 2012425786
+      player_mage_sheet_10: -604194707
+      player_mage_sheet_11: 888216134
+      player_mage_sheet_12: 1479004020
+      player_mage_sheet_13: 479889391
+      player_mage_sheet_14: 401998708
+      player_mage_sheet_15: 1429541735
+      player_mage_sheet_16: -925335079
+      player_mage_sheet_17: -771215249
+      player_mage_sheet_18: 436646997
+      player_mage_sheet_19: -32200628
+      player_mage_sheet_2: -925275848
+      player_mage_sheet_20: -1668912520
+      player_mage_sheet_21: -1045795983
+      player_mage_sheet_22: 1528964125
+      player_mage_sheet_23: -973361449
+      player_mage_sheet_24: -2118085526
+      player_mage_sheet_25: -1793839926
+      player_mage_sheet_26: -1450676400
+      player_mage_sheet_27: -1599868021
+      player_mage_sheet_28: 1438646652
+      player_mage_sheet_29: -439513602
+      player_mage_sheet_3: -480163077
+      player_mage_sheet_30: -1466151373
+      player_mage_sheet_31: 905870210
+      player_mage_sheet_32: -1103000570
+      player_mage_sheet_33: -711192531
+      player_mage_sheet_34: -1769887926
+      player_mage_sheet_35: 176010188
+      player_mage_sheet_36: -1790806716
+      player_mage_sheet_37: -386981707
+      player_mage_sheet_38: 756197756
+      player_mage_sheet_39: 146116104
+      player_mage_sheet_4: 572759658
+      player_mage_sheet_40: 2038159915
+      player_mage_sheet_41: 1280497918
+      player_mage_sheet_42: -300630041
+      player_mage_sheet_43: 1652601865
+      player_mage_sheet_44: -673513275
+      player_mage_sheet_45: 152254263
+      player_mage_sheet_46: 1962303978
+      player_mage_sheet_47: -1814875510
+      player_mage_sheet_48: -1952513833
+      player_mage_sheet_49: -12328207
+      player_mage_sheet_5: 1172279337
+      player_mage_sheet_50: 1317347779
+      player_mage_sheet_51: 1285933239
+      player_mage_sheet_52: -532914415
+      player_mage_sheet_53: -645426839
+      player_mage_sheet_54: 484354439
+      player_mage_sheet_55: -822793836
+      player_mage_sheet_56: -649537310
+      player_mage_sheet_57: -1298839723
+      player_mage_sheet_58: -982117456
+      player_mage_sheet_59: 1395249564
+      player_mage_sheet_6: -329955450
+      player_mage_sheet_7: 1618820456
+      player_mage_sheet_8: 471091817
+      player_mage_sheet_9: 1692998816
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

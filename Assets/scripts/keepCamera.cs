@@ -7,11 +7,12 @@ public class keepCamera : MonoBehaviour
    
     void Start()
     {
-        int camera = GameObject.FindGameObjectsWithTag("MainCamera").Length;
+         GameObject[] camera = GameObject.FindGameObjectsWithTag("MainCamera");
 
-        if (camera > 1)
+        if (camera.Length > 1)
         {
-            Destroy(gameObject);
+
+            Destroy(camera[1]);
         }
         else
         {
