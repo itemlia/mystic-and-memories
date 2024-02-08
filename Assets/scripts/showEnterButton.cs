@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
+//ing System.Diagnostics;
 using Unity.VisualScripting;
 using UnityEditor.Presets;
 using UnityEngine;
@@ -20,6 +20,8 @@ public class showEnterButton : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, distance, mask);
         if (hit.transform != null)
         {
+            testCoroutine();
+
             hideAfterSeconds();
             
         }
@@ -36,6 +38,15 @@ public class showEnterButton : MonoBehaviour
                 buttonManager.SetActive(false);
             }
             
+        }
+
+        IEnumerator testCoroutine()
+        {
+            Debug.Log("started coroutine at: " + Time.time);
+
+            yield return new WaitForSeconds(5);
+
+            Debug.Log("ended coroutine at:" + Time.time);
         }
     }
 
