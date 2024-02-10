@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -26,7 +25,7 @@ public class dialogueManager : MonoBehaviour
 
     IEnumerator typeCharacters()
     {
-        foreach (char c in dialogueLines[index].ToCharArray()) 
+        foreach (char c in dialogueLines[index].ToCharArray())
         {
             textComp.text += c;
             yield return new WaitForSeconds(textSpeed);
@@ -35,14 +34,14 @@ public class dialogueManager : MonoBehaviour
 
     public void startNewLine()
     {
-        if (index < dialogueLines.Length - 1) 
-        { 
-            index++;
-            textComp.text += string.Empty;
-            StartCoroutine(typeCharacters());
-        } else
+        if (index < dialogueLines.Length - 1)
         {
-           gameObject.SetActive(false);
+            index++;
+            textComp.text = string.Empty;
+            StartCoroutine(typeCharacters());
         }
+        
     }
+
+   
 }

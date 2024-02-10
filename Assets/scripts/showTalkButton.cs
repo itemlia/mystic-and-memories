@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class showTalkButton : MonoBehaviour
 {
-    public GameObject pressF;
+    public GameObject talkButton;
     [SerializeField] private float distance;
     
 
@@ -16,12 +16,19 @@ public class showTalkButton : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, distance, mask);
         if (hit.transform != null)
         {
+            Debug.Log("hit");
+            
             if (hit.transform.CompareTag("Player")) //when player gets near npc pop up shows allowing them to talk to player
             {
-                 pressF.SetActive(true);
+                Debug.Log("hello");
+                talkButton.SetActive(true);
             }
         }
-        
+        else
+        {
+            talkButton.SetActive(false); //when player moves away enter button disappears
+        }
+
 
     }
 
