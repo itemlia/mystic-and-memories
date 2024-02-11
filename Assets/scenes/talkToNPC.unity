@@ -497,7 +497,7 @@ MonoBehaviour:
   textComp: {fileID: 1267215241}
   dialogueLines: []
   textSpeed: 0
-  index: 0
+  i: 0
   dm: {fileID: 1586065961}
 --- !u!114 &1357868724
 MonoBehaviour:
@@ -696,7 +696,7 @@ MonoBehaviour:
   - 'ban: i suggest you see the mage who lives two doors down'
   - 'ban: he may be able to help'
   textSpeed: 0.075
-  index: 0
+  i: 0
 --- !u!1 &1644344110
 GameObject:
   m_ObjectHideFlags: 0

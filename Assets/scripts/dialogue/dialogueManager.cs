@@ -9,7 +9,7 @@ public class dialogueManager : MonoBehaviour
     [SerializeField] public string[] dialogueLines;
     [SerializeField] private float textSpeed;
 
-    public int index;
+    public int i;
 
     private void Start()
     {
@@ -19,13 +19,13 @@ public class dialogueManager : MonoBehaviour
 
     private void startDialogue()
     {
-        index = 0;
+        i = 0;
         StartCoroutine(typeCharacters());
     }
 
     IEnumerator typeCharacters()
     {
-        foreach (char c in dialogueLines[index].ToCharArray())
+        foreach (char c in dialogueLines[i].ToCharArray())
         {
             textComp.text += c;
             yield return new WaitForSeconds(textSpeed);
@@ -34,9 +34,9 @@ public class dialogueManager : MonoBehaviour
 
     public void startNewLine()
     {
-        if (index < dialogueLines.Length - 1)
+        if (i < dialogueLines.Length - 1)
         {
-            index++;
+            i++;
             textComp.text = string.Empty;
             StartCoroutine(typeCharacters());
         }
