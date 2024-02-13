@@ -336,8 +336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComp: {fileID: 1103539253}
   dialogueLines: []
-  textSpeed: 0
-  index: 0
+  i: 0
   dm: {fileID: 1069160708}
 --- !u!114 &506945967
 MonoBehaviour:
@@ -624,8 +623,7 @@ MonoBehaviour:
     island'
   - 'mage: once you''ve killed it put it''s remains in my cauldron and you should
     get a potion to get your memories back'
-  textSpeed: 0.075
-  index: 0
+  i: 0
 --- !u!114 &1069160709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -832,7 +830,7 @@ GameObject:
   - component: {fileID: 1296557016}
   - component: {fileID: 1296557015}
   - component: {fileID: 1296557014}
-  - component: {fileID: 1296557013}
+  - component: {fileID: 1296557017}
   m_Layer: 5
   m_Name: exit
   m_TagString: Untagged
@@ -857,23 +855,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 212.1, y: 123.8}
+  m_AnchoredPosition: {x: -242.5, y: 123.8}
   m_SizeDelta: {x: 158.4799, y: 136.4042}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1296557013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296557011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbb9516e90117c54c96d6d26352d134b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  exit: {fileID: 1296557014}
-  player: {fileID: 0}
 --- !u!114 &1296557014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -918,8 +902,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1296557013}
-        m_TargetAssemblyTypeName: exitTalkScene, Assembly-CSharp
+      - m_Target: {fileID: 1296557017}
+        m_TargetAssemblyTypeName: exitTalkMage, Assembly-CSharp
         m_MethodName: loadHouse
         m_Mode: 1
         m_Arguments:
@@ -968,6 +952,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296557011}
   m_CullTransparentMesh: 1
+--- !u!114 &1296557017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296557011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f63dab7db51b34294a66894ddf2a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exit: {fileID: 1296557014}
 --- !u!1 &1392881904
 GameObject:
   m_ObjectHideFlags: 0

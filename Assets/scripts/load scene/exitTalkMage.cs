@@ -4,20 +4,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class exitTalkScene : MonoBehaviour
+public class exitTalkMage : MonoBehaviour
 {
     public Button exit;
-    
+
 
     private void OnMouseDown()
     {
-       
+
         loadHouse();
     }
 
     public void loadHouse()
     {
-        SceneManager.LoadScene("scenes/insideHouse");
-        
+        SceneManager.LoadScene("scenes/mageHouse");
+
     }
 }

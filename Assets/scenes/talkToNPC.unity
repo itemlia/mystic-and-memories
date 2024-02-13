@@ -496,7 +496,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComp: {fileID: 1267215241}
   dialogueLines: []
-  textSpeed: 0
   i: 0
   dm: {fileID: 1586065961}
 --- !u!114 &1357868724
@@ -695,7 +694,6 @@ MonoBehaviour:
   - 'ban: oh well ... i can''t help much with missing memories'
   - 'ban: i suggest you see the mage who lives two doors down'
   - 'ban: he may be able to help'
-  textSpeed: 0.075
   i: 0
 --- !u!1 &1644344110
 GameObject:
@@ -734,7 +732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 212.1, y: 123.8}
+  m_AnchoredPosition: {x: -208.4, y: 123.8}
   m_SizeDelta: {x: 158.4799, y: 136.4042}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1644344112
