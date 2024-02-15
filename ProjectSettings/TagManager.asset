@@ -8,6 +8,8 @@ TagManager:
   - cross
   - red
   - blue
+  - global light
+  - spotlight
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - Level
   - Water
   - UI
-  - 
+  - LIGHT
   - 
   - 
   - 
