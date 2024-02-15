@@ -31,19 +31,24 @@ public class characterController : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             anim.Play("moveBack");
-        } 
+        }
         else if (Input.GetKey(KeyCode.S))
         {
-            anim.Play("moveForw"); 
+            anim.Play("moveForw");
         }
         else if (Input.GetKey(KeyCode.D))
         {
             anim.Play("moveRight");
-        } 
+        }
         else if (Input.GetKey(KeyCode.A))
         {
             anim.Play("moveLeft");
-        } else
+        }
+        else if (Input.GetKey(KeyCode.E))
+        {
+            anim.Play("fightForward");
+        }
+        else
         {
             anim.Play("idleAnim");
         }
