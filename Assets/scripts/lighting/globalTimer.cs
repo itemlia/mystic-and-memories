@@ -3,6 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public class globalTimer : MonoBehaviour
 {
@@ -12,17 +13,36 @@ public class globalTimer : MonoBehaviour
     
     
 
-    private void Start()
-    {
+   private void Start()
+   {
         lightComp = GetComponent<Light2D>();
-
-      
-        for (int i = 0; i < 100; i++)
+        GameObject[] lightDupe = GameObject.FindGameObjectsWithTag("global light");
+        string scene = SceneManager.GetActiveScene().name;
+        Debug.Log(scene);
+        if (scene == "level 1")
         {
-            StartCoroutine(Timer());
+
+            for (int i = 0; i < 100; i++)
+            {
+                if (lightDupe.Length > 1)
+                {
+                    Destroy(lightDupe[1]);
+                }
+                else
+                {
+                    //gameObject.SetActive(true);
+                    StartCoroutine(Timer());
+                    DontDestroyOnLoad(lightComp);
+
+                }
+            }
+        } else
+        {
+            gameObject.SetActive(false);
         }
-        
-    }
+
+   }
+    
 
    
     IEnumerator Timer()

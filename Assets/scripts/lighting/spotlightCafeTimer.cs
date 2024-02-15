@@ -16,13 +16,13 @@ public class spotlightCafeTimer : MonoBehaviour
     {
         lightComp = GetComponent<Light2D>();
 
-
         for (int i = 0; i < 100; i++)
         {
             StartCoroutine(Timer());
+           
         }
-
     }
+
 
 
     IEnumerator Timer()
