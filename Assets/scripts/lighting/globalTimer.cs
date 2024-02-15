@@ -10,18 +10,22 @@ public class globalTimer : MonoBehaviour
     
     private Light2D lightComp;
     public float repeatTime;
-    
-    
 
-   private void Start()
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
    {
         lightComp = GetComponent<Light2D>();
         GameObject[] lightDupe = GameObject.FindGameObjectsWithTag("global light");
-        string scene = SceneManager.GetActiveScene().name;
-        Debug.Log(scene);
-        if (scene == "level 1")
-        {
+        string name = SceneManager.GetActiveScene().name;
+        Debug.Log(name);
 
+        if (name == "level1")
+        {
             for (int i = 0; i < 100; i++)
             {
                 if (lightDupe.Length > 1)
@@ -30,14 +34,16 @@ public class globalTimer : MonoBehaviour
                 }
                 else
                 {
-                    //gameObject.SetActive(true);
+                    gameObject.SetActive(true);
                     StartCoroutine(Timer());
                     DontDestroyOnLoad(lightComp);
 
                 }
             }
-        } else
+        } 
+        else 
         {
+            DontDestroyOnLoad(lightComp);
             gameObject.SetActive(false);
         }
 
