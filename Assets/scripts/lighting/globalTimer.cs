@@ -19,6 +19,7 @@ public class globalTimer : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
    {
+        
         lightComp = GetComponent<Light2D>();
         GameObject[] lightDupe = GameObject.FindGameObjectsWithTag("global light");
         string name = SceneManager.GetActiveScene().name;
@@ -36,21 +37,22 @@ public class globalTimer : MonoBehaviour
                 {
                     gameObject.SetActive(true);
                     StartCoroutine(Timer());
-                    DontDestroyOnLoad(lightComp);
-
                 }
             }
         } 
         else 
         {
-            DontDestroyOnLoad(lightComp);
+            
             gameObject.SetActive(false);
         }
 
-   }
-    
+    }
 
-   
+    private void Start()
+    {
+        DontDestroyOnLoad(lightComp);
+    }
+
     IEnumerator Timer()
     {
         while (lightComp.intensity < 1)
