@@ -28,7 +28,7 @@ public class characterController : MonoBehaviour
         rBody.velocity = new Vector2(horizontalInput, verticalInput) * speed; //gets the velcity character is goimh
 
 
-        //plays diff animation depending on what the player is doing or which way theyre moving
+        //plays diff animation depending on what the playerTrans is doing or which way theyre moving
 
         if (Input.GetKey(KeyCode.W))
         {

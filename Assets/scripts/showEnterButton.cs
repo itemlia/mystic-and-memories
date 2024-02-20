@@ -21,14 +21,14 @@ public class showEnterButton : MonoBehaviour
         if (hit.transform != null)
         {
 
-            if (hit.transform.CompareTag("Player")) //when player gets near house enter button shows up
+            if (hit.transform.CompareTag("Player")) //when playerTrans gets near house enter button shows up
             {
                 buttonManager.SetActive(true);
             }
 
         } else
         {
-            buttonManager.SetActive(false); //when player moves away enter button disappears
+            buttonManager.SetActive(false); //when playerTrans moves away enter button disappears
         }
     }
 

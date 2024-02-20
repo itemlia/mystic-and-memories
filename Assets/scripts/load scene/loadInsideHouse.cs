@@ -12,7 +12,7 @@ public class loadInsideHouse : MonoBehaviour
     public GameObject player;
 
     public void loadHouse()
-    {//changes scene and starts player at a specific postion
+    {//changes scene and starts playerTrans at a specific postion
         SceneManager.LoadScene("scenes/insideHouse");
         player.transform.position = new Vector3(0.1314539f, -9.746695f, 0f);
     }

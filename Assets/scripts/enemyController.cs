@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEditor.Build;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class enemyController : MonoBehaviour
 {
-    private Transform player;
+    private Transform playerTrans;
+    private GameObject playerCanvas;
+    
 
     public float speed;
     public float stoppingDist;
@@ -21,8 +24,9 @@ public class enemyController : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.FindWithTag("Player").GetComponent<Transform>();
-        hitParticles = GameObject.Find("slashParticles").GetComponent <ParticleSystem>();
+        playerTrans = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        playerCanvas = GameObject.Find("empty player canvas");
+        hitParticles = GameObject.Find("slashParticles").GetComponent<ParticleSystem>();
         deathParticles = GameObject.Find("deathParticles").GetComponent<ParticleSystem>();
         healthBar = GameObject.Find("health bar");
     }
@@ -32,10 +36,10 @@ public class enemyController : MonoBehaviour
         //sets death particle system to be where enemy is
         deathParticles.transform.position = gameObject.transform.position;
 
-        // enemy stops when it reaches a certain distance from the player
-        if (playerInSight && Vector2.Distance(transform.position, player.position) >= stoppingDist)
-        { 
-            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        // enemy stops when it reaches a certain distance from the playerTrans
+        if (playerInSight && Vector2.Distance(transform.position, playerTrans.position) >= stoppingDist)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, playerTrans.position, speed * Time.deltaTime);
         }
         hitSequence();
     }
@@ -59,10 +63,11 @@ public class enemyController : MonoBehaviour
 
     private void hitSequence()
     {
+
         if (playerInSight && health > 0 && Input.GetKeyDown(KeyCode.E))
         {
-            //when e is pressed, player is in range, and health is above zero, allow player to deal damage
-           
+            //when e is pressed, playerTrans is in range, and health is above zero, allow playerTrans to deal damage
+
             health = health - 10;
 
             //when enemy takes damage, decreases healthbar as well
@@ -72,17 +77,27 @@ public class enemyController : MonoBehaviour
             //plays particle system aniamtion
 
             hitParticles.Play();
-            
-        } else if (playerInSight && health <= 0 && Input.GetKeyDown(KeyCode.E))
+
+        }
+        else if (playerInSight && health <= 0 && Input.GetKeyDown(KeyCode.E))
         {
-            //when health reaches zero enemy dies
-
-            Destroy(gameObject);
-
             //plays particle system on death
 
             deathParticles.Play();
 
+            //when health reaches zero enemy dies
+
+            Destroy(gameObject);
+            //playerCanvas.SetActive(false);
+            SceneManager.LoadScene("endScene");
+
+
         }
     }
 }
+
+
+
+
+
+

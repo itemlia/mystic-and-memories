@@ -17,7 +17,7 @@ public class showTalkButton : MonoBehaviour
         if (hit.transform != null)
         {
             
-            if (hit.transform.CompareTag("Player")) //when player gets near npc pop up shows allowing them to talk to player
+            if (hit.transform.CompareTag("Player")) //when playerTrans gets near npc pop up shows allowing them to talk to playerTrans
             {
                
                 talkButton.SetActive(true);
@@ -25,7 +25,7 @@ public class showTalkButton : MonoBehaviour
         }
         else
         {
-            talkButton.SetActive(false); //when player moves away enter button disappears
+            talkButton.SetActive(false); //when playerTrans moves away enter button disappears
         }
 
 

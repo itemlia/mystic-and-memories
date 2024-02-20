@@ -10,13 +10,13 @@ public class keepPlayer : MonoBehaviour
     private void Start()
     {
         GameObject[] player = GameObject.FindGameObjectsWithTag("Player");
-       
+        
         //if player duplicates when renetering a scene, new one will be destroyed
 
         if (player.Length > 1)
         {
 
-            Destroy(player[0]);
+            Destroy(player[1]);
         } 
         else
         {
