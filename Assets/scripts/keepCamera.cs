@@ -14,7 +14,7 @@ public class keepCamera : MonoBehaviour
         if (camera.Length > 1)
         {
 
-            Destroy(camera[1]);
+            Destroy(camera[0]);
         }
         else
         {

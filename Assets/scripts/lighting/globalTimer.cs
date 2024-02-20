@@ -35,7 +35,7 @@ public class globalTimer : MonoBehaviour
                 {
                     //destroys extra global light if it duplicates when changing scene 
 
-                    Destroy(lightDupe[1]);
+                    Destroy(lightDupe[0]);
                 }
                 else
                 {

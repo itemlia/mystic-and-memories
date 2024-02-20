@@ -14,12 +14,14 @@ public class enemyController : MonoBehaviour
     public int health = 100;
 
     public GameObject healthBar;
+    public ParticleSystem particles;
 
     public Vector3 scale;
 
     private void Start()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        particles = GameObject.Find("slashParticles").GetComponent <ParticleSystem>();
         healthBar = GameObject.Find("health bar");
     }
 
@@ -30,7 +32,7 @@ public class enemyController : MonoBehaviour
         { 
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
-        decreaseHealth();
+        hitSequence();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -50,7 +52,7 @@ public class enemyController : MonoBehaviour
         }
     }
 
-    private void decreaseHealth()
+    private void hitSequence()
     {
         if (playerInSight && health > 0 && Input.GetKeyDown(KeyCode.E))
         {
@@ -61,6 +63,10 @@ public class enemyController : MonoBehaviour
             //when enemy takes damage, decreases healthbar as well
 
             healthBar.transform.localScale = healthBar.transform.localScale - scale;
+
+            //plays particle system aniamtion
+
+            particles.Play();
             
         } else if (playerInSight && health <= 0 && Input.GetKeyDown(KeyCode.E))
         {

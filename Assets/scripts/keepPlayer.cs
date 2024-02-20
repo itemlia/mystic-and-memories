@@ -16,7 +16,7 @@ public class keepPlayer : MonoBehaviour
         if (player.Length > 1)
         {
 
-            Destroy(player[1]);
+            Destroy(player[0]);
         } 
         else
         {
