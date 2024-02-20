@@ -17,6 +17,7 @@ public class exitTalkScene : MonoBehaviour
 
     public void loadHouse()
     {
+        //changes scene
         SceneManager.LoadScene("scenes/insideHouse");
         
     }

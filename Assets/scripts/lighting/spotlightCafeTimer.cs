@@ -16,6 +16,8 @@ public class spotlightCafeTimer : MonoBehaviour
     {
         lightComp = GetComponent<Light2D>();
 
+        //loops the couroutine
+        
         for (int i = 0; i < 100; i++)
         {
             StartCoroutine(Timer());
@@ -24,7 +26,7 @@ public class spotlightCafeTimer : MonoBehaviour
     }
 
 
-
+    //coroutine that delays when the intesity of the light decreases, aslong as intensity is more than 1
     IEnumerator Timer()
     {
         while (lightComp.intensity > 1)

@@ -11,6 +11,7 @@ public class loadMageHouse : MonoBehaviour
 
     public void loadHouse()
     {
+        //changes scene and starts player at a specific postion
         player.transform.position = new Vector3(-0.07999991f, -9.081256f, 0f);
         SceneManager.LoadScene("scenes/mageHouse");
         

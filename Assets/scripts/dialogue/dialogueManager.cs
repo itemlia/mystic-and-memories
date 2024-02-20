@@ -16,7 +16,7 @@ public class dialogueManager : MonoBehaviour
 
     private void Start()
     {
-       
+       //clears everything in textbox
         textComp.text = string.Empty;
         startDialogue();
     }
@@ -26,6 +26,7 @@ public class dialogueManager : MonoBehaviour
         StartCoroutine(typeCharacters());
     }
 
+    //coroutine that types out the dialogue lines by character
     IEnumerator typeCharacters()
     {
         while (i >= dialogueLines.Length)
@@ -42,6 +43,7 @@ public class dialogueManager : MonoBehaviour
         }
     }
 
+    //starts a new line of dialogue by incrementing array where dialogue lines are and clearing the text box
     public void startNewLine()
     {
         if (i < dialogueLines.Length - 1 )

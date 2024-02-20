@@ -9,6 +9,8 @@ public class keepCamera : MonoBehaviour
     {
          GameObject[] camera = GameObject.FindGameObjectsWithTag("MainCamera");
 
+        //if camera duplicates when renetering a scene, new one will be destroyed
+
         if (camera.Length > 1)
         {
 

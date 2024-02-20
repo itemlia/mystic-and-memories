@@ -25,8 +25,10 @@ public class characterController : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-        rBody.velocity = new Vector2(horizontalInput, verticalInput) * speed;
+        rBody.velocity = new Vector2(horizontalInput, verticalInput) * speed; //gets the velcity character is goimh
 
+
+        //plays diff animation depending on what the player is doing or which way theyre moving
 
         if (Input.GetKey(KeyCode.W))
         {

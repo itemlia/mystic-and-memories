@@ -11,6 +11,7 @@ public class talkToNPC : MonoBehaviour
 
     public void loadScene()
     {
+        //changes scene
         SceneManager.LoadScene("scenes/talkToNPC");
     
     }

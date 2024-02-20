@@ -17,6 +17,7 @@ public class exitTalkMage : MonoBehaviour
 
     public void loadHouse()
     {
+        //changes scene
         SceneManager.LoadScene("scenes/mageHouse");
 
     }

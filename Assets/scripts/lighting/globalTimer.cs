@@ -19,22 +19,28 @@ public class globalTimer : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
    {
-        
+        //when scene is loaded run function
+
         lightComp = GetComponent<Light2D>();
         GameObject[] lightDupe = GameObject.FindGameObjectsWithTag("global light");
         string name = SceneManager.GetActiveScene().name;
-        Debug.Log(name);
 
         if (name == "level1")
         {
+            //if right scene is loaded sttart timer 
+
             for (int i = 0; i < 100; i++)
             {
                 if (lightDupe.Length > 1)
                 {
+                    //destroys extra global light if it duplicates when changing scene 
+
                     Destroy(lightDupe[1]);
                 }
                 else
                 {
+                    //starts coroutine timer and sets light to be active
+
                     gameObject.SetActive(true);
                     StartCoroutine(Timer());
                 }
@@ -42,7 +48,8 @@ public class globalTimer : MonoBehaviour
         } 
         else 
         {
-            
+            //if in wrong scene disables light
+
             gameObject.SetActive(false);
         }
 
@@ -50,9 +57,11 @@ public class globalTimer : MonoBehaviour
 
     private void Start()
     {
+        //keeps global light when changing scene so timer continues
         DontDestroyOnLoad(lightComp);
     }
 
+    //coroutine that delays when the intesity of the light decreases, aslong as intensity is more than 1
     IEnumerator Timer()
     {
         while (lightComp.intensity < 1)

@@ -25,9 +25,9 @@ public class enemyController : MonoBehaviour
 
     private void Update()
     {
-     
+        // enemy stops when it reaches a certain distance from the player
         if (playerInSight && Vector2.Distance(transform.position, player.position) >= stoppingDist)
-        {
+        { 
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
         decreaseHealth();
@@ -54,13 +54,18 @@ public class enemyController : MonoBehaviour
     {
         if (playerInSight && health > 0 && Input.GetKeyDown(KeyCode.E))
         {
-            
-
+            //when e is pressed, player is in range, and health is above zero, allow player to deal damage
+           
             health = health - 10;
+
+            //when enemy takes damage, decreases healthbar as well
+
             healthBar.transform.localScale = healthBar.transform.localScale - scale;
             
         } else if (playerInSight && health <= 0 && Input.GetKeyDown(KeyCode.E))
         {
+            //when health reaches zero enemy dies
+
             Destroy(gameObject);
         }
     }

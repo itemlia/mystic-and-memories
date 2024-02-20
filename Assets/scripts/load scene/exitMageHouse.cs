@@ -13,7 +13,7 @@ public class exitMageHouse : MonoBehaviour
         player = GameObject.FindWithTag("Player");
     }
     private void OnCollisionEnter2D(Collision2D collision)
-    {
+    {//changes scene and starts player at a specific postion
         SceneManager.LoadScene("scenes/level1");
         player.transform.position = new Vector3(0.9f, 8.34f, 0f);
     }

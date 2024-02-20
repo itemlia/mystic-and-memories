@@ -13,7 +13,7 @@ public class hoverDescription : MonoBehaviour
     private void OnMouseOver()
     {
 
-        description.SetActive(true);
+        description.SetActive(true); //when hovering over item, description shows
 
     }
 

@@ -7,6 +7,7 @@ public class talkToMage : MonoBehaviour
 {
     public void loadScene()
     {
+        //changes scene
         SceneManager.LoadScene("scenes/talkToMage");
 
     }
