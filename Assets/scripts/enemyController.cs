@@ -66,7 +66,7 @@ public class enemyController : MonoBehaviour
 
         if (playerInSight && health > 0 && Input.GetKeyDown(KeyCode.E))
         {
-            //when e is pressed, playerTrans is in range, and health is above zero, allow playerTrans to deal damage
+            //when e is pressed, player is in range, and health is above zero, allow player to deal damage
 
             health = health - 10;
 
@@ -88,7 +88,7 @@ public class enemyController : MonoBehaviour
             //when health reaches zero enemy dies
 
             Destroy(gameObject);
-            //playerCanvas.SetActive(false);
+            playerCanvas.SetActive(false);
             SceneManager.LoadScene("endScene");
 
 
