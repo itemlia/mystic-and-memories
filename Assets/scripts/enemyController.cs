@@ -18,28 +18,30 @@ public class enemyController : MonoBehaviour
 
     private GameObject healthBar;
     public ParticleSystem hitParticles;
-    public ParticleSystem deathParticles;
+    public ParticleSystem enemyParticles;
 
     public Vector3 scale;
 
     private void Start()
     {
+       
         playerTrans = GameObject.FindWithTag("Player").GetComponent<Transform>();
         playerCanvas = GameObject.Find("empty player canvas");
         hitParticles = GameObject.Find("slashParticles").GetComponent<ParticleSystem>();
-        deathParticles = GameObject.Find("deathParticles").GetComponent<ParticleSystem>();
+        enemyParticles = GameObject.Find("enemyParticles").GetComponent<ParticleSystem>();
         healthBar = GameObject.Find("health bar");
     }
 
     private void Update()
     {
         //sets death particle system to be where enemy is
-        deathParticles.transform.position = gameObject.transform.position;
+        enemyParticles.transform.position = gameObject.transform.position;
 
         // enemy stops when it reaches a certain distance from the playerTrans
         if (playerInSight && Vector2.Distance(transform.position, playerTrans.position) >= stoppingDist)
         {
             transform.position = Vector2.MoveTowards(transform.position, playerTrans.position, speed * Time.deltaTime);
+            enemyParticles.Play();
         }
         hitSequence();
     }
@@ -81,10 +83,7 @@ public class enemyController : MonoBehaviour
         }
         else if (playerInSight && health <= 0 && Input.GetKeyDown(KeyCode.E))
         {
-            //plays particle system on death
-
-            deathParticles.Play();
-
+           
             //when health reaches zero enemy dies
 
             Destroy(gameObject);
