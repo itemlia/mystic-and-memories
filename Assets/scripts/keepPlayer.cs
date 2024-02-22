@@ -7,7 +7,12 @@ using UnityEngine.SceneManagement;
 public class keepPlayer : MonoBehaviour
 {
 
-    private void Start()
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         GameObject[] player = GameObject.FindGameObjectsWithTag("Player");
         

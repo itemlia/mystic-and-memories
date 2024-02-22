@@ -16,9 +16,10 @@ public class enemyController : MonoBehaviour
     public bool playerInSight;
     public int health = 100;
 
-    private GameObject healthBar;
+    public GameObject healthBar;
     public ParticleSystem hitParticles;
     public ParticleSystem enemyParticles;
+    public Animator enemyAnim;
 
     public Vector3 scale;
 
@@ -30,6 +31,7 @@ public class enemyController : MonoBehaviour
         hitParticles = GameObject.Find("slashParticles").GetComponent<ParticleSystem>();
         enemyParticles = GameObject.Find("enemyParticles").GetComponent<ParticleSystem>();
         healthBar = GameObject.Find("health bar");
+        enemyAnim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -42,6 +44,7 @@ public class enemyController : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, playerTrans.position, speed * Time.deltaTime);
             enemyParticles.Play();
+            enemyAnim.Play("enemy");
         }
         hitSequence();
     }
