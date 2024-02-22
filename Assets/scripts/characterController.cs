@@ -6,12 +6,11 @@ using UnityEngine.Rendering;
 
 public class characterController : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    public float speed;
 
     private Rigidbody2D rBody;
     private Animator anim;
     private BoxCollider2D boxCollider;
-
 
 
     private void Awake()
@@ -20,13 +19,13 @@ public class characterController : MonoBehaviour
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
     }
+   
 
     private void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         rBody.velocity = new Vector2(horizontalInput, verticalInput) * speed; //gets the velcity character is goimh
-
 
         //plays diff animation depending on what the playerTrans is doing or which way theyre moving
 

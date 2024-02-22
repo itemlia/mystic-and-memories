@@ -14,7 +14,7 @@ public class exitHouse : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //changes scene and starts playerTrans at a specific postion
+        //changes scene and starts player at a specific postion
         SceneManager.LoadScene("scenes/level1");
         player.transform.position = new Vector3(-10.31762f, 8.664538f, 0f);
     }

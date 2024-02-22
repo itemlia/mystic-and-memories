@@ -35,7 +35,9 @@ public class globalTimer : MonoBehaviour
                 {
                     //destroys extra global light if it duplicates when changing scene 
 
-                    Destroy(lightDupe[0]);
+                    Destroy(lightDupe[1]);
+                   
+                    lightComp = lightDupe[0].GetComponent<Light2D>();
                 }
                 else
                 {

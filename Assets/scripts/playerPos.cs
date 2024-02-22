@@ -10,7 +10,7 @@ public class playerPos : MonoBehaviour
   
     void Start()
     {
-        player.transform.position = new Vector3(-0.07f, -8.56f, 0f); //playerTrans loads in at bottom of screen
+        player.transform.position = new Vector3(-0.07f, -8.56f, 0f); //player loads in at bottom of screen
 
 
     }
