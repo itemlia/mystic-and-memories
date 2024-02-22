@@ -31,7 +31,7 @@ public class globalTimer : MonoBehaviour
 
             //if right scene is loaded sttart timer 
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 3; i++)
             {
                 if (lightDupe.Length > 1)
                 {
@@ -51,7 +51,7 @@ public class globalTimer : MonoBehaviour
                 }
             }
         }
-        else
+        else if (name != "level1")
         {
             //if in wrong scene disables light
 
@@ -72,9 +72,10 @@ public class globalTimer : MonoBehaviour
 
     public void TurnOff()
     {
-        tempLightVal = lightComp.intensity;
-        lightComp.intensity = 1;
         StopCoroutine(Timer());
+        tempLightVal = lightComp.intensity;
+        lightComp.intensity = 0;
+        
     }
 
     public void TurnOn()
@@ -89,7 +90,7 @@ public class globalTimer : MonoBehaviour
         while (lightComp.intensity < 1)
         {
             yield return new WaitForSeconds(repeatTime);
-            lightComp.intensity = lightComp.intensity + (0.00008f);
+            lightComp.intensity = lightComp.intensity + (0.008f);
         }
     }
 }
