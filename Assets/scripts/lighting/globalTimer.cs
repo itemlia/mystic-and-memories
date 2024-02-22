@@ -10,6 +10,7 @@ public class globalTimer : MonoBehaviour
     
     private Light2D lightComp;
     public float repeatTime;
+    private float tempLightVal = 0.0f;
     
     private void OnEnable()
     {
@@ -44,8 +45,9 @@ public class globalTimer : MonoBehaviour
                 {
                     //starts coroutine timer and sets light to be active
 
-                    gameObject.SetActive(true);
-                    StartCoroutine(Timer());
+                    //gameObject.SetActive(true);
+                    //StartCoroutine(Timer());
+                    TurnOn();
                 }
             }
         }
@@ -53,7 +55,8 @@ public class globalTimer : MonoBehaviour
         {
             //if in wrong scene disables light
 
-            gameObject.SetActive(false);
+            // gameObject.SetActive(false);
+            TurnOff();
         }
     }
 
@@ -67,7 +70,20 @@ public class globalTimer : MonoBehaviour
        
     }
 
-    //coroutine that delays when the intesity of the light decreases, aslong as intensity is more than 1
+    public void TurnOff()
+    {
+        tempLightVal = lightComp.intensity;
+        lightComp.intensity = 1;
+        StopCoroutine(Timer());
+    }
+
+    public void TurnOn()
+    {
+        lightComp.intensity = tempLightVal;
+        StartCoroutine(Timer());
+    }
+
+    //coroutine that delays when the intesity of the light decreases, aslong as intensity is less than 1
     IEnumerator Timer()
     {
         while (lightComp.intensity < 1)
