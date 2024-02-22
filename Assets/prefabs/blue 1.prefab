@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5181454475808074934}
   - component: {fileID: 6025870321476501351}
   - component: {fileID: 965301167591544473}
-  - component: {fileID: 343574683683813182}
   - component: {fileID: 2489662469941430605}
+  - component: {fileID: 9054194451617414663}
   m_Layer: 0
   m_Name: blue 1
   m_TagString: item
@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6025870321476501351
 SpriteRenderer:
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 1862241907, guid: 24b48e641782b3349a40d52c464835f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -132,19 +132,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.76468444}
   m_EdgeRadius: 0
---- !u!114 &343574683683813182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 387367569923578167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35f23b22606cd18419caffda9a8e1cb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: {fileID: 801041375890198373, guid: dc09b5100d836ca42a917c137fc567db, type: 3}
 --- !u!114 &2489662469941430605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,3 +145,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 6967701394256300380, guid: 8a56099ac240b484fb92582247e90b5a, type: 3}
+--- !u!114 &9054194451617414663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387367569923578167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca3bc50afdc01634c8240b0c763b5c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: {fileID: 0}

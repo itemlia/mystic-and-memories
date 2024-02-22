@@ -10,6 +10,7 @@ TagManager:
   - blue
   - global light
   - spotlight
+  - player canvas
   layers:
   - Default
   - TransparentFX

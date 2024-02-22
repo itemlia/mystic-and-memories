@@ -9,18 +9,19 @@ public class levelOne : MonoBehaviour
     public Button enter;
   
 
-    public void destroy()
+    public void loadScene()
     {
-        //delets canvas
-        Destroy(gameObject);
-        
-       
+        //loads scene
+        SceneManager.LoadScene("scenes/level1");
+     
     }
 
+   
     public void Start()
     {
+      
         var btn = enter.GetComponent<Button>();
-        btn.onClick.AddListener(destroy);
+        btn.onClick.AddListener(loadScene);
     }
 
 }

@@ -6,11 +6,21 @@ using UnityEngine.UI;
 
 public class endGame : MonoBehaviour
 {
-   
+    public Button quit;
 
-    private void OnMouseDown()
+
+    public void exitGame()
     {
         Application.Quit();
+
+    }
+
+
+    public void Start()
+    {
+
+        var btn = quit.GetComponent<Button>();
+        btn.onClick.AddListener(exitGame);
     }
 
 }
