@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5917172601225442661}
   - component: {fileID: 932392512485274856}
   - component: {fileID: 3155130569552680263}
+  - component: {fileID: -6129467432624111816}
   m_Layer: 0
   m_Name: blue
   m_TagString: blue
@@ -121,7 +122,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5917172601225442661}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -6129467432624111816}
+        m_TargetAssemblyTypeName: speedUp, Assembly-CSharp
+        m_MethodName: OnMouseDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3155130569552680263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,3 +148,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 387367569923578167, guid: 37930a8d7a8a4dd4982b788b3d5d0d36, type: 3}
+--- !u!114 &-6129467432624111816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6967701394256300380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd06d4297f949bc43a25ab8597d2f2db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
