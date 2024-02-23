@@ -14,7 +14,11 @@ public class loadMageHouse : MonoBehaviour
         //changes scene and starts player at a specific postion
         player.transform.position = new Vector3(-0.07999991f, -9.081256f, 0f);
         SceneManager.LoadScene("scenes/mageHouse");
-        
+
+        //plays open door sound effect
+        var sound = GameObject.Find("soundManager").GetComponent<audioManager>();
+
+        sound.sound[1].playSound(true);
     }
 
     public void Start()

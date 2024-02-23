@@ -13,16 +13,18 @@ public class loadInsideHouse : MonoBehaviour
     public Button enter;
     public GameObject player;
 
-    public AudioSource sound;
+    
 
 
     public void loadHouse()
     { //changes scene and starts player at a specific postion
         SceneManager.LoadScene("scenes/insideHouse");
         player.transform.position = new Vector3(0.1314539f, -9.746695f, 0f);
-        sound = GameObject.Find("soundManager").GetComponent<AudioSource>();
+        
+        //plays open door sound effect
+        var sound = GameObject.Find("soundManager").GetComponent<audioManager>();
 
-        sound.Play();
+        sound.sound[1].playSound(true);
         
     }
     

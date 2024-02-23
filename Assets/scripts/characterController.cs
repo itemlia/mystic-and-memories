@@ -19,7 +19,14 @@ public class characterController : MonoBehaviour
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
     }
-   
+
+    private void Start()
+    {
+        //plays background music
+        var sound = GameObject.Find("soundManager").GetComponent<audioManager>();
+
+        sound.sound[0].playSound(true);
+    }
 
     private void Update()
     {
@@ -27,7 +34,7 @@ public class characterController : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         rBody.velocity = new Vector2(horizontalInput, verticalInput) * speed; //gets the velcity character is goimh
 
-        //plays diff animation depending on what the playerTrans is doing or which way theyre moving
+        //plays diff animation depending on what the player is doing or which way theyre moving
 
         if (Input.GetKey(KeyCode.W))
         {
@@ -48,10 +55,16 @@ public class characterController : MonoBehaviour
         else if (Input.GetKey(KeyCode.E))
         {
             anim.Play("fightForward");
+
+            //plays sword hit
+            var sound = GameObject.Find("soundManager").GetComponent<audioManager>();
+
+            sound.sound[2].playSound(true);
         }
         else
         {
             anim.Play("idleAnim");
         }
+
     }
 }

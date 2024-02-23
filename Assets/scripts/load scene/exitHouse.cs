@@ -18,6 +18,11 @@ public class exitHouse : MonoBehaviour
         //changes scene and starts player at a specific postion
         SceneManager.LoadScene("scenes/level1");
         player.transform.position = new Vector3(-10.31762f, 8.664538f, 0f);
-       
+
+        //plays open door sound effect
+        var sound = GameObject.Find("soundManager").GetComponent<audioManager>();
+
+        sound.sound[1].playSound(true);
+
     }
 }

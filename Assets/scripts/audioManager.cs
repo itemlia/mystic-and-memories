@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,15 +6,34 @@ using UnityEngine;
 
 public class audioManager : MonoBehaviour
 {
-   [Serializable]
+    [Serializable]
 
-   public class soundEffect
+    public class soundEffect
     {
-        public AudioSource soundFile;
-        public string name;
-        public float volume;
+        //audio class
 
+        public AudioSource soundFile;
+        public string soundName;
+        public float volume;
+        public bool play;
+
+        //method for playing sound
+        public void playSound(bool play)
+        {
+            if (play == true)
+            {
+                soundFile.Play();
+            }
+        }
+       
     }
 
-    [SerializeField] List<soundEffect> sounds = new List<soundEffect>();
+    //array of soundeffects
+    public soundEffect[] sound;
+
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
 }
