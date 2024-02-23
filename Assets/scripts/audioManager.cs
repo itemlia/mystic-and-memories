@@ -1,18 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class audioManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+   [Serializable]
+
+   public class soundEffect
     {
-        
+        public AudioSource soundFile;
+        public string name;
+        public float volume;
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] List<soundEffect> sounds = new List<soundEffect>();
 }
