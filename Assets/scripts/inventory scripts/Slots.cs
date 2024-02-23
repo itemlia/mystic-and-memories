@@ -8,9 +8,12 @@ public class Slots : MonoBehaviour
     private Inventory inventory;
     private int i;
 
+    public GameObject redText;
+
     private void Start()
     {
         inventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
+
     }
 
 
