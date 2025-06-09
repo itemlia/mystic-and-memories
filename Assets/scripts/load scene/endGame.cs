@@ -6,11 +6,17 @@ using UnityEngine.UI;
 
 public class endGame : MonoBehaviour
 {
-   
-
-    private void OnMouseDown()
+    [SerializeField] private Button quitBtn;
+    
+    public void quit()
     {
         Application.Quit();
     }
-
+    
+    private void Start()
+    {
+        var btn = quitBtn.GetComponent<Button>();
+        btn.onClick.AddListener(quit);
+        quit();
+    }
 }

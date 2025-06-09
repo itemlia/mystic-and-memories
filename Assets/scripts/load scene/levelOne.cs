@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,13 +16,10 @@ public class levelOne : MonoBehaviour
         //changes scene
         SceneManager.LoadScene("scenes/level1");
         
-       
     }
 
-    public void Start()
+    private void OnMouseDown()
     {
-        var btn = enter.GetComponent<Button>();
-        btn.onClick.AddListener(loadScene);
+        loadScene();
     }
-
 }

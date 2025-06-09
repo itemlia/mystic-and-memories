@@ -11,6 +11,7 @@ public class characterController : MonoBehaviour
     private Rigidbody2D rBody;
     private Animator anim;
     private BoxCollider2D boxCollider;
+    [SerializeField] public GameObject pauseMenu;
 
 
     private void Awake()
@@ -25,7 +26,7 @@ public class characterController : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-        rBody.velocity = new Vector2(horizontalInput, verticalInput) * speed; //gets the velcity character is goimh
+        rBody.velocity = new Vector2(horizontalInput, verticalInput) * speed; //gets the velocity character is goimh
 
         //plays diff animation depending on what the playerTrans is doing or which way theyre moving
 
@@ -53,5 +54,6 @@ public class characterController : MonoBehaviour
         {
             anim.Play("idleAnim");
         }
+
     }
 }
