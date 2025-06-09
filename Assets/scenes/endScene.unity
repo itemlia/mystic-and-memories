@@ -582,6 +582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1194e335e6591604c8f503c79a5f6a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endGameBtn: {fileID: 1033113266}
 --- !u!114 &1033113266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,8 +628,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1033113265}
-        m_TargetAssemblyTypeName: returnToTitle, Assembly-CSharp
-        m_MethodName: loadScene
+        m_TargetAssemblyTypeName: endGame, Assembly-CSharp
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

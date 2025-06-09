@@ -23,6 +23,11 @@ public class characterController : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+        
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         rBody.velocity = new Vector2(horizontalInput, verticalInput) * speed; //gets the velcity character is goimh

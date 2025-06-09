@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f1bd4fc5-c886-4384-bf24-36bd7c203335" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.mystic-and-memories/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.mystic-and-memories/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.mystic-and-memories/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scenes/New Universal Render Pipeline Asset 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scenes/New Universal Render Pipeline Asset 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scenes/endScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scenes/endScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scenes/level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scenes/level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scenes/titleCard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scenes/titleCard.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/characterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/characterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/enemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/enemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/load scene/endGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/load scene/endGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/showEnterButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/showEnterButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17484a9af6b944dea5cd9be4dbb0da2c171c00/20/23e5daaa/UnityEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17484a9af6b944dea5cd9be4dbb0da2c171c00/25/34a947cb/InvokableCall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17484a9af6b944dea5cd9be4dbb0da2c171c00/30/8117faff/RectTransform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17484a9af6b944dea5cd9be4dbb0da2c171c00/6e/de2e5f7c/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/gwbg.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../secondPrototype/Assets/Scripts/exitGame.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "b4-bugfixes",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+</project>
